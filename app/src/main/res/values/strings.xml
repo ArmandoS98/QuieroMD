@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MaterialDesingViews</string>
+    <string name="empresa">Empresa</string>
+    <string name="nombre_establecimiento">Nombre Establecimiento</string>
+    <string name="nombre_empresa">Nombre empresa</string>
+    <string name="ingrese_numero_empresa">Ingrese numero empresa</string>
+    <string name="ingrese_nombre_empresa">Ingrese nombre empresa</string>
+    <string name="ingrese_numero_llave">Ingrese numero de llave</string>
+    <string name="ingrese_numero_establecimiento">Ingrese numero de establecimiento</string>
+    <string name="ingrese_nombre_establecimiento">Ingrese nombre de establecimiento</string>
+    <string name="ingrese_numero_terminal">Ingrese numero de terminal</string>
+    <string name="establecimiento">Establecimiento</string>
+    <string name="terminal">Terminal</string>
+    <string name="llave">Llave</string>
+    <string name="informacion_ngeneral">Informacion\nGeneral</string>
+    <string name="por_favor_llene_todos_los_campos">Por favor llene todos los campos</string>
+    <string name="datos_para_voucher">DATOS PARA VOUCHER</string>
+    <string name="esta_informacion_se_vera_reflejada_en_el_voucher_impreso">Esta informacion se vera reflejada en el voucher impreso</string>
+    <string name="continuar">Continuar</string>
+</resources>

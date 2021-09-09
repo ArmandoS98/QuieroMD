@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/custom_actionbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Header-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/informacion_ngeneral"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/por_favor_llene_todos_los_campos" />
+
+            <!--Empresa-->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/empresa"
+                android:textColor="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_et"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="phone"
+                android:maxLength="15"
+                android:background="@drawable/borderet"
+                android:ems="10"
+                android:hint="@string/ingrese_numero_empresa"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <!--Establecimiento-->
+            <TextView
+                android:id="@+id/tv_establecimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/establecimiento"
+                android:textColor="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_establecimiento"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_et"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="phone"
+                android:background="@drawable/borderet"
+                android:ems="10"
+                android:hint="@string/ingrese_numero_establecimiento"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <!--Terminal-->
+            <TextView
+                android:id="@+id/tv_terminal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/terminal"
+                android:textColor="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_termial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_et"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="phone"
+                android:background="@drawable/borderet"
+                android:ems="10"
+                android:hint="@string/ingrese_numero_terminal"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <!--Llave-->
+            <TextView
+                android:id="@+id/tv_llave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/llave"
+                android:textColor="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_llave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_et"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="phone"
+                android:background="@drawable/borderet"
+                android:ems="10"
+                android:hint="@string/ingrese_numero_llave"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <!--Separador-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="12dp"
+                android:background="@color/gray" />
+
+            <!--Header2-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="@string/datos_para_voucher"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/esta_informacion_se_vera_reflejada_en_el_voucher_impreso" />
+
+
+            <!--Nombre Empresa-->
+            <TextView
+                android:id="@+id/tv_nombre_empresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/nombre_empresa"
+                android:textColor="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nombre_empresa"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_et"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="phone"
+                android:background="@drawable/borderet"
+                android:ems="10"
+                android:hint="@string/ingrese_nombre_empresa"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <!--Nombre Establecimento-->
+            <TextView
+                android:id="@+id/tv_nombre_establecimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="@string/nombre_establecimiento"
+                android:textColor="@color/purple_500"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nombre_establecimiento"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ancho_et"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="phone"
+                android:background="@drawable/borderet"
+                android:ems="10"
+                android:hint="@string/ingrese_nombre_establecimiento"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/continuar" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/progress_bar_configuraciones" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    sp: Tamaño de la letra
+    dp: Tamaño de una view
+    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
